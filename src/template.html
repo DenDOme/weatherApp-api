@@ -8,7 +8,35 @@
 </head>
 
 <body>
-    <h1>ALIVE</h1>
+    <span id="error__text"></span>
+    <form id="form">
+        <label for="country">Country</label>
+        <input type="text" id="search" placeholder="Search weather">
+        <button type="submit" id="submit">SUBMIT</button>
+    </form>
+    <div id="content">
+        <div class="content__top">
+            <div class="content__top-row">
+                <div id="is_day"></div>
+                <div id="temp" class="content__temp"></div>
+            </div>
+            <div class="content__top-row location">
+                <span id="country" class="content__location"></span>
+                <span id="place" class="content__location"></span>
+            </div>
+            <div id="time" class="content__time"></div>
+        </div>
+        <div class="content__bottom">
+            <div class="content__item"><span>Clouds</span> <span id="cloud"></span></div>
+            <div class="content__item"><span>feels like </span><span id="feelslike"></span></div>
+            <div class="content__item"><span>gust</span><span id="gust"></span></div>
+            <div class="content__item arrow__item">
+                <div id="wind__direction"></div>
+                <img id="wind__arrow" alt="arrow">
+                <div id="wind__kph"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
